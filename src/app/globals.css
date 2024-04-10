@@ -5,6 +5,13 @@
 .primary {
   @apply text-[#7660b8]
 }
+
+/* Aplicamos margin-top cuyo valor será la función calc() */
+/* Esta función calcula todo el alto de la pantalla (100dvh) y le resta 4rem */
+.mt-screenH {
+  margin-top: calc(100vh - 4rem); 
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
