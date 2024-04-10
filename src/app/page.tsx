@@ -1,8 +1,15 @@
-import { redirect } from "next/navigation";
+import Release from "@/components/release/Release";
+import Video from "@/components/Video";
 
 export default function Home() {
-  redirect('/home');
   return (
-    <></>
+    <>
+      <main className='h-full w-full'>
+        
+        <Video/>
+        <Release/>
+        
+    </main>
+    </>
   );
 }

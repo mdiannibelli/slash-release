@@ -1,7 +1,6 @@
 'use client';
 import Link from 'next/link'
 import { usePathname } from 'next/navigation';
-import React from 'react'
 
 interface Props {
     url: string;
@@ -9,12 +8,14 @@ interface Props {
 }
 
 export default function NavbarLinks({url, text}: Props) {
-    const path = usePathname()
+  //TODO Mostrar el <Link> en color 'primary' al coincidir la ruta con el #
+  const path = usePathname()
   return (
     <>
-        <Link className={`text-white font-md rounded-md ml-4 lg:ml-8 p-2
+        <Link id={url} className={`text-white font-md rounded-md ml-4 lg:ml-8 p-2 hover:text-[#7660b8] duration-300
         ${path === url ? 'primary' : null}`}
         href={url}>{text}</Link>
+        
     </>
   )
 }

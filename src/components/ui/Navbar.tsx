@@ -3,35 +3,32 @@ import React from 'react'
 import Link from 'next/link'
 import {IoLogoFacebook, IoLogoInstagram, IoLogoTiktok, IoLogoTwitter, IoLogoYoutube} from 'react-icons/io5'
 import NavbarLinks from './NavbarLinks'
+import LogoNavbar from './LogoNavbar'
 
 const paths = [
     {
-        url: '/home',
-        text: 'Home'
-    },
-    {
-        url: '/release',
+        url: '#release',
         text: 'Release'
     },
     {
-        url: '/video',
+        url: '#video',
         text: 'Video'
     },
     {
-        url: '/tour',
+        url: '#tour',
         text: 'Tour'
     },
     {
-        url: '/merch',
+        url: '#merch',
         text: 'Merch'
     },
 ]
 
 export default function Navbar() {
   return (
-    <nav className='bg-black flex justify-between px-8 items-center py-4 w-full'>
+    <nav className='bg-black flex justify-between px-8 items-center py-4 w-full fixed top-0 z-20'>
         <div className='flex relative items-center'>
-            <Link href='/home'><h1 className='sticky uppercase text-2xl lg:text-4xl font-bold primary'>Slash</h1></Link>
+            <LogoNavbar/>
         </div>
         <div className='hidden sm:flex items-center flex-1 justify-around w-auto'>
             <div className='flex-1 flex justify-center'>
