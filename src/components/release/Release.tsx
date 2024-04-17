@@ -7,10 +7,10 @@ import SeparateBar from '../ui/SeparateBar'
 export default function Release() {
   return (
     <div className='bg-black flex flex-col justify-center items-center z-10 relative mt-screenH'>
-        <div className='hidden 2xl:flex mt-16'>
-         <Title title='Release'/>
+        <div className='flex justify-center items-center mt-20'>
+         <Title className='ml-4 md:ml-12' title='Release'/>
         </div>
-        <div className='pt-12 pb-24 flex flex-col md:flex-row gap-8 px-4'>
+        <div className='pt-20 md:pt-12 pb-24 flex flex-col md:flex-row gap-8 px-4'>
             <div>
                 <Image src="/imgs/album-release.png" alt="Slash Album Release" width={500} height={500} className=' w-96 h-96 mx-auto md:w-full md:h-full object-cover'/>
             </div>

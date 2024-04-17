@@ -3,8 +3,13 @@ import Link from 'next/link'
 import {IoLogoFacebook, IoLogoInstagram, IoLogoTiktok, IoLogoTwitter, IoLogoYoutube} from 'react-icons/io5'
 import NavbarLinks from './NavbarLinks'
 import LogoNavbar from './LogoNavbar'
+import { ButtonMenu } from './ButtonMenu'
 
 const paths = [
+    {
+        url: '',
+        text: 'Home'
+    },
     {
         url: '#release',
         text: 'Release'
@@ -16,10 +21,6 @@ const paths = [
     {
         url: '#tour',
         text: 'Tour'
-    },
-    {
-        url: '#merch',
-        text: 'Merch'
     },
 ]
 
@@ -47,6 +48,7 @@ export default function Navbar({hash}: Props) {
                 <Link className='hover:text-[#7660b8] text-white duration-300' href='https://twitter.com/Slash'><IoLogoTwitter className='w-6 h-6'/></Link>
             </div>}
         </div>
+        <ButtonMenu/>
     </nav>
   )
 }

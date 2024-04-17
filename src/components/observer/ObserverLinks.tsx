@@ -16,7 +16,7 @@ export default function ObserverLinks({children}: {children:React.ReactNode}) {
             });
         },
         {
-            threshold: 0.8
+            threshold: 0.2,
         }
     )
     // children => lista de los elementos hijos dentro del componente ObserverLinks

@@ -6,6 +6,12 @@
   @apply text-[#7660b8]
 }
 
+.bg-slash {
+  background: url(../../public/imgs/Slash_Cover\ 2.png) top no-repeat;
+  background-size: cover;
+  /* padding: 11.25rem 0; */
+}
+
 /* Aplicamos margin-top cuyo valor será la función calc() */
 /* Esta función calcula todo el alto de la pantalla (100dvh) y le resta 4rem */
 .mt-screenH {
@@ -29,4 +35,27 @@ body {
 
 #detach-button-host {
   display: none;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+.fade-in {
+  /* keyframes */
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  /* webkit */
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+
+
 }

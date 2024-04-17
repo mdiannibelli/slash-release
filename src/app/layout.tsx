@@ -14,7 +14,7 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
   return (
     <html lang="en">
       <body className={inter.className}>
-      <main className='min-h-screen bg-black w-full'>
+      <main className=' bg-black'>
        {/*  <Navbar/> */}
         {children}
     </main>
